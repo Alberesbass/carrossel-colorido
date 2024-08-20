@@ -1,0 +1,100 @@
+.imagens-slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.imagens-slider .imagem-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.imagens-slider .imagem-slide.mostrar {
+  opacity: 1;
+}
+
+.primeiro-slide {
+  background-image: url("../img/imagem1.png");
+}
+
+.segundo-slide {
+  background-image: url("../img/imagem2.png");
+}
+
+.terceiro-slide {
+  background-image: url("../img/imagem3.png");
+}
+
+.quarto-slide {
+  background-image: url("../img/imagem4.png");
+}
+
+.seta-voltar,
+.seta-avancar {
+  position: absolute;
+  z-index: 1;
+}
+
+.seta-voltar {
+  left: 4%;
+  transform: rotateY(180deg);
+}
+
+.seta-avancar {
+  right: 4%;
+}
+
+.opacidade {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.artigo {
+  background-color: #fff;
+  margin-left: 180px;
+  padding: 65px 60px;
+  width: 620px;
+  border-radius: 10px;
+}
+
+.artigo .titulo {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.artigo .informacao {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.artigo .btn-saiba-mais {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.btn-saiba-mais.rosa {
+  color: #c50000;
+}
+
+.btn-saiba-mais.verde {
+  color: #d9dd10;
+}
+
+.btn-saiba-mais.laranja {
+  color: #a63a17;
+}
+
+.btn-saiba-mais.azul {
+  color: #10acdd;
+}
